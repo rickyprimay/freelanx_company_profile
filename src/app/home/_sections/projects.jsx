@@ -7,11 +7,13 @@ import "magnific-popup";
 export default function Projects() {
   useEffect(() => {
     if (typeof window !== "undefined") {
-      $(".work-popup").magnificPopup({
-        type: "image",
-        gallery: {
-          enabled: true,
-        },
+      import("magnific-popup").then(() => {
+        $(".work-popup").magnificPopup({
+          type: "image",
+          gallery: {
+            enabled: true,
+          },
+        });
       });
     }
   }, []);
@@ -29,67 +31,17 @@ export default function Projects() {
           <p className="md:text-xl md:leading-7 text-base mt-2">Get a glimpse of our work</p>
         </div>
         <div className="grid md:grid-cols-2 gap-6">
-            <div>
-              <a href="assets/images/projects/work7.jpg" className="work-popup">
-                <div
-                  className="rounded-lg overflow-hidden relative after:absolute after:left-0 after:top-0 after:w-full after:h-full after:bg-[linear-gradient(0deg,_rgba(0,0,0,.3),_transparent)] after:opacity-0 hover:after:opacity-100 after:transition-all after:duration-500 group">
-                  <img src="assets/images/projects/work7.jpg" alt="" data-rjs="2"
-                    className="group-hover:blur-[1.5px] group-hover:scale-[1.04] transition-all duration-500" />
-                  <span
-                    className="absolute top-4 right-4 inline-block rounded-[32px] bg-[rgba(255,79,1,.5)] py-[7px] px-[14px] text-white text-sm uppercase tracking-wider leading-[30px] font-medium">Website</span>
-                  <div
-                    className="z-20 absolute left-7.5 -bottom-0 opacity-0 group-hover:opacity-100 group-hover:bottom-6 transition-all duration-500">
-                    <h1 className="lg:text-3xl text-[26px] font-semibold text-white">A Branch with Flowers</h1>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div>
-              <a href="assets/images/projects/work1.jpg" className="work-popup">
-                <div
-                  className="rounded-lg overflow-hidden relative after:absolute after:left-0 after:top-0 after:w-full after:h-full after:bg-[linear-gradient(0deg,_rgba(0,0,0,.3),_transparent)] after:opacity-0 hover:after:opacity-100 after:transition-all after:duration-500 group">
-                  <img src="assets/images/projects/work1.jpg" alt="" data-rjs="2"
-                    className="group-hover:blur-[1.5px] group-hover:scale-[1.04] transition-all duration-500" />
-                  <span
-                    className="absolute top-4 right-4 inline-block rounded-[32px] bg-[rgba(255,79,1,.5)] py-[7px] px-[14px] text-white text-sm uppercase tracking-wider leading-[30px] font-medium">Apps</span>
-                  <div
-                    className="z-20 absolute left-7.5 -bottom-0 opacity-0 group-hover:opacity-100 group-hover:bottom-6 transition-all duration-500">
-                    <h1 className="lg:text-3xl text-[26px] font-semibold text-white">Orange Rose Flower</h1>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div className="col-md-6 col-xl-6 portfolio-item category-1">
-              <a href="assets/images/projects/work6.jpg" className="work-popup">
-                <div
-                  className="rounded-lg overflow-hidden relative after:absolute after:left-0 after:top-0 after:w-full after:h-full after:bg-[linear-gradient(0deg,_rgba(0,0,0,.3),_transparent)] after:opacity-0 hover:after:opacity-100 after:transition-all after:duration-500 group">
-                  <img src="assets/images/projects/work6.jpg" alt="" data-rjs="2"
-                    className="group-hover:blur-[1.5px] group-hover:scale-[1.04] transition-all duration-500" />
-                  <span
-                    className="absolute top-4 right-4 inline-block rounded-[32px] bg-[rgba(255,79,1,.5)] py-[7px] px-[14px] text-white text-sm uppercase tracking-wider leading-[30px] font-medium">Landing</span>
-                  <div
-                    className="z-20 absolute left-7.5 -bottom-0 opacity-0 group-hover:opacity-100 group-hover:bottom-6 transition-all duration-500">
-                    <h1 className="lg:text-3xl text-[26px] font-semibold text-white">Green Plant on a Desk</h1>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div>
-              <a href="assets/images/projects/work5.jpg" className="work-popup">
-                <div
-                  className="rounded-lg overflow-hidden relative after:absolute after:left-0 after:top-0 after:w-full after:h-full after:bg-[linear-gradient(0deg,_rgba(0,0,0,.3),_transparent)] after:opacity-0 hover:after:opacity-100 after:transition-all after:duration-500 group">
-                  <img src="assets/images/projects/work5.jpg" alt="" data-rjs="2"
-                    className="group-hover:blur-[1.5px] group-hover:scale-[1.04] transition-all duration-500" />
-                  <span
-                    className="absolute top-4 right-4 inline-block rounded-[32px] bg-[rgba(255,79,1,.5)] py-[7px] px-[14px] text-white text-sm uppercase tracking-wider leading-[30px] font-medium">Mockup</span>
-                  <div
-                    className="z-20 absolute left-7.5 -bottom-0 opacity-0 group-hover:opacity-100 group-hover:bottom-6 transition-all duration-500">
-                    <h1 className="lg:text-3xl text-[26px] font-semibold text-white">Orange Rose Flower</h1>
-                  </div>
-                </div>
-              </a>
-            </div>
-            </div>
+          <div>
+            <a href="assets/images/projects/work7.jpg" className="work-popup">
+              <img src="assets/images/projects/work7.jpg" alt="Project 1" />
+            </a>
+          </div>
+          <div>
+            <a href="assets/images/projects/work1.jpg" className="work-popup">
+              <img src="assets/images/projects/work1.jpg" alt="Project 2" />
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   );
