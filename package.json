@@ -9,13 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@headlessui/react": "^2.2.0",
     "gsap": "^3.12.7",
     "jquery": "^3.7.1",
     "magnific-popup": "^1.2.0",
     "next": "15.1.7",
+    "photoswipe": "^5.4.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "yet-another-react-lightbox": "^1.14.0"
   },
   "devDependencies": {
     "postcss": "^8",
