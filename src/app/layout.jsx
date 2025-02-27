@@ -16,7 +16,7 @@ const robotoMono = Roboto_Mono({
 
 export const metadata = {
   title: "Freelanxx - Jasa Pembuatan Aplikasi Web, Mobile, dan Desktop",
-  description: "",
+  description: "Fakhri kopet ;v",
 };
 
 export default function RootLayout({ children }) {
