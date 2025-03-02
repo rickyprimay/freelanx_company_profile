@@ -40,9 +40,9 @@ export default function Pricing() {
     setSelectedPackage(packageKeys[nextIndex]);
 
     if (scrollRef.current) {
-      const scrollWidth = scrollRef.current.scrollWidth;
-      const clientWidth = scrollRef.current.clientWidth;
-      const maxScrollLeft = scrollWidth - clientWidth;
+      const scrollWidth = scrollRef.current.scrollWidth; 
+      const clientWidth = scrollRef.current.clientWidth; 
+      const maxScrollLeft = scrollWidth - clientWidth; 
 
       if (scrollRef.current.scrollLeft >= maxScrollLeft) {
         scrollRef.current.scrollTo({ left: 0, behavior: "smooth" });
@@ -67,17 +67,17 @@ export default function Pricing() {
   };
 
   return (
-    <section id="pricing" className="py-8 md:py-16 text-center bg-gray-50">
+    <section id="pricing" className="py-16 text-center bg-gray-50">
       <div className="container mx-auto max-w-4xl px-4">
         <SectionTitle title="Daftar Harga" />
-        <h2 className="text-2xl md:text-4xl font-bold mb-4">
+        <h2 className="text-4xl font-bold mb-4">
           Dengan Harga yang <span className="text-blue-500">Sangat Terjangkau!</span>
         </h2>
 
-        <div className="bg-white shadow-lg rounded-xl p-4 md:p-8 mt-8 border border-gray-200">
+        <div className="bg-white shadow-lg rounded-xl p-8 mt-8 border border-gray-200">
           <div className="flex justify-center gap-4 mb-6">
             <button
-              className={`px-4 py-2 md:px-6 md:py-2 rounded-full text-sm font-semibold ${
+              className={`px-6 py-2 rounded-full text-sm font-semibold ${
                 selectedMajorPackage === "Paket Usaha" ? "bg-[#004A70] text-white" : "bg-white text-[#004A70] border border-[#004A70]"
               }`}
               onClick={() => setSelectedMajorPackage("Paket Usaha")}
@@ -85,7 +85,7 @@ export default function Pricing() {
               Paket Usaha
             </button>
             <button
-              className={`px-4 py-2 md:px-6 md:py-2 rounded-full text-sm font-semibold ${
+              className={`px-6 py-2 rounded-full text-sm font-semibold ${
                 selectedMajorPackage === "Paket Aplikasi Custom" ? "bg-[#004A70] text-white" : "bg-white text-[#004A70] border border-[#004A70]"
               }`}
               onClick={() => setSelectedMajorPackage("Paket Aplikasi Custom")}
@@ -93,11 +93,11 @@ export default function Pricing() {
               Paket Aplikasi Custom
             </button>
           </div>
-          <div className="flex flex-col md:flex-row items-start justify-between gap-8">
-            <div className="text-start w-full md:w-1/2">
-              <p className="text-xl md:text-2xl font-bold text-gray-500">Mulai dari</p>
-              <p className="text-black line-through text-2xl md:text-4xl mt-2">Rp 1.000.000</p>
-              <p className="text-3xl md:text-5xl font-bold text-red-500 mt-2">
+          <div className="flex flex-row items-start justify-between gap-8">
+            <div className="text-start">
+              <p className="text-2xl font-bold text-gray-500">Mulai dari</p>
+              <p className="text-black line-through text-4xl mt-2">Rp 1.000.000</p>
+              <p className="text-5xl font-bold text-red-500 mt-2">
                 Rp 800.000 <span className="text-black">Saja!</span>
               </p>
               <div className="mt-3">
@@ -107,14 +107,14 @@ export default function Pricing() {
               </div>
             </div>
 
-            <div className="w-full md:w-1/2 border p-3 rounded-xl shadow-soft-lg">
+            <div className="md:w-1/2 border p-3 rounded-xl shadow-soft-lg">
               <div className="flex items-center gap-4 mb-6">
-                <button onClick={handlePrev} className="hidden md:block px-4 py-2 bg-gray-200 rounded-full">◀</button>
+                <button onClick={handlePrev} className="px-4 py-2 bg-gray-200 rounded-full">◀</button>
                 <div ref={scrollRef} className="flex overflow-x-auto gap-4 whitespace-nowrap scrollbar p-2">
                   {packageKeys.map((pkg) => (
                     <button
                       key={pkg}
-                      className={`px-4 py-2 md:px-6 md:py-2 rounded-full text-sm font-semibold flex-shrink-0 ${
+                      className={`px-6 py-2 rounded-full text-sm font-semibold flex-shrink-0 ${
                         selectedPackage === pkg ? "bg-[#004A70] text-white" : "bg-white text-[#004A70] border border-[#004A70]"
                       }`}
                       onClick={() => setSelectedPackage(pkg)}
@@ -123,7 +123,7 @@ export default function Pricing() {
                     </button>
                   ))}
                 </div>
-                <button onClick={handleNext} className="hidden md:block px-4 py-2 bg-gray-200 rounded-full">▶</button>
+                <button onClick={handleNext} className="px-4 py-2 bg-gray-200 rounded-full">▶</button>
               </div>
               <h3 className="font-bold text-start text-xl text-gray-800">Fitur dan Benefit</h3>
               <ul className="text-left mt-2 text-gray-700">

@@ -45,14 +45,14 @@ export default function WorkProcess() {
 
         <div className="space-y-8">
           {steps.map((step, index) => (
-            <div key={index} className="bg-white rounded-2xl shadow-lg flex items-center">
+            <div key={index} className="bg-white rounded-2xl shadow-lg flex items-center overflow-x-auto">
               <div className={`flex-shrink-0 ${step.color} text-white text-xl font-bold py-8 px-4 w-[250px] text-center rounded-l-2xl`}>
                 {step.stage}
               </div>
 
-              <div className="flex items-center space-x-4 p-4 w-full relative">
+              <div className="flex items-center space-x-4 p-4 w-full min-w-max relative">
                 {step.processes.map((process, i) => (
-                  <div key={i} className="flex flex-col items-center relative w-full">
+                  <div key={i} className="flex flex-col items-center relative w-full min-w-[120px]">
                     {i > 0 && (
                       <div className="absolute top-4 left-[-50%] w-full h-1 bg-black"></div>
                     )}
