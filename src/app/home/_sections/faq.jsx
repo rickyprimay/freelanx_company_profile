@@ -4,8 +4,7 @@ import { useEffect } from "react";
 import Image from "next/image";
 import { SectionTitle } from "@/components/sectionTitle";
 import BgShape from "../../../../public/assets/images/freelanx_common_assets/bg_lines_about_us.png";
-import FreelanxxLogo from "../../../../public/assets/images/freelanx_common_assets/freelanxx.svg";
-
+import FreelanxxLogo from "../../../../public/assets/images/freelanx_common_assets/freelanxx-logo-circle.png";
 
 const faqList = [
   {
@@ -71,9 +70,9 @@ export default function Faq() {
   return (
     <section id="faqs" className="lg:pt-[25px] pt-[15px]">
       <div className="container">
-        <div className="text-center pb-[15px] fadeInUp" data-delay="0.2">
+        <div className="text-center pb-[25px] fadeInUp" data-delay="0.2">
           <SectionTitle title="FAQs" />
-          <p className="md:text-6xl text-4xl font-bold mt-3 tracking-wide">Pertanyaan yang sering ditanyakan</p>
+          <p className="md:text-6xl text-4xl font-bold mt-1 tracking-wide">Pertanyaan yang sering ditanyakan</p>
         </div>
 
         <div className="grid lg:grid-cols-[33.33%_auto] md:grid-cols-2 grid-cols-1 gap-6">
@@ -91,12 +90,15 @@ export default function Faq() {
                 >
                   <i className="ri-whatsapp-line text-xl"></i> Konsultasi via WhatsApp
                 </a>
-                <a
-                  href="mailto:freelanxx.it@gmail.com"
-                  className="flex items-center justify-center gap-2 bg-orange-500 text-white text-lg font-medium py-3 px-6 rounded-full shadow-md hover:bg-orange-600 transition"
-                >
-                  <i className="ri-mail-line text-xl"></i> Konsultasi via Email
-                </a>
+                <div className="text-white text-lg font-medium">
+                  Lebih nyaman di email?
+                  <a
+                    href="mailto:freelanxx.it@gmail.com"
+                    className="block text-orange-500 hover:text-orange-600 transition font-bold"
+                  >
+                    freelanxx.it@gmail.com
+                  </a>
+                </div>
               </div>
             </div>
           </div>
