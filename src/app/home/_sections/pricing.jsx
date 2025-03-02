@@ -93,49 +93,53 @@ export default function Pricing() {
               Paket Aplikasi Custom
             </button>
           </div>
-          <div className="flex flex-row items-start justify-between gap-8">
-            <div className="text-start">
-              <p className="text-2xl font-bold text-gray-500">Mulai dari</p>
-              <p className="text-black line-through text-4xl mt-2">Rp 1.000.000</p>
-              <p className="text-5xl font-bold text-red-500 mt-2">
-                Rp 800.000 <span className="text-black">Saja!</span>
-              </p>
-              <div className="mt-3">
-                <button className="hover:bg-green-500 hover:text-white px-4 py-1 rounded-xl font-semibold border border-green-500 text-green-500 transition duration-300">
-                  Konsultasi Sekarang
-                </button>
-              </div>
-            </div>
+          <div className="flex flex-col lg:flex-row items-start justify-between gap-8">
+  {/* Bagian Harga */}
+  <div className="sm:text-center md:text-start lg:text-start w-full lg:w-1/2">
+    <p className="text-2xl font-bold text-gray-500">Mulai dari</p>
+    <p className="text-black line-through text-4xl mt-2">Rp 1.000.000</p>
+    <p className="text-5xl font-bold text-red-500 mt-2">
+      Rp 800.000 <span className="text-black">Saja!</span>
+    </p>
+    <div className="mt-3">
+      <button className="hover:bg-green-500 hover:text-white px-4 py-1 rounded-xl font-semibold border border-green-500 text-green-500 transition duration-300">
+        Konsultasi Sekarang
+      </button>
+    </div>
+  </div>
 
-            <div className="md:w-1/2 border p-3 rounded-xl shadow-soft-lg">
-              <div className="flex items-center gap-4 mb-6">
-                <button onClick={handlePrev} className="px-4 py-2 bg-gray-200 rounded-full">◀</button>
-                <div ref={scrollRef} className="flex overflow-x-auto gap-4 whitespace-nowrap scrollbar p-2">
-                  {packageKeys.map((pkg) => (
-                    <button
-                      key={pkg}
-                      className={`px-6 py-2 rounded-full text-sm font-semibold flex-shrink-0 ${
-                        selectedPackage === pkg ? "bg-[#004A70] text-white" : "bg-white text-[#004A70] border border-[#004A70]"
-                      }`}
-                      onClick={() => setSelectedPackage(pkg)}
-                    >
-                      {pkg}
-                    </button>
-                  ))}
-                </div>
-                <button onClick={handleNext} className="px-4 py-2 bg-gray-200 rounded-full">▶</button>
-              </div>
-              <h3 className="font-bold text-start text-xl text-gray-800">Fitur dan Benefit</h3>
-              <ul className="text-left mt-2 text-gray-700">
-                {packages[selectedPackage]?.features.map((feature, index) => (
-                  <li key={index} className="flex items-center">
-                    <span className="text-green-500 mr-2">•</span>
-                    {feature}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
+  {/* Bagian Paket */}
+  <div className="w-full max-w-md sm:max-w-lg border p-3 rounded-xl shadow-soft-lg">
+
+    <div className="flex items-center gap-4 mb-6">
+      <button onClick={handlePrev} className="px-4 py-2 bg-gray-200 rounded-full">◀</button>
+      <div ref={scrollRef} className="flex overflow-x-auto gap-4 whitespace-nowrap scrollbar p-2">
+        {packageKeys.map((pkg) => (
+          <button
+            key={pkg}
+            className={`px-6 py-2 rounded-full text-sm font-semibold flex-shrink-0 ${
+              selectedPackage === pkg ? "bg-[#004A70] text-white" : "bg-white text-[#004A70] border border-[#004A70]"
+            }`}
+            onClick={() => setSelectedPackage(pkg)}
+          >
+            {pkg}
+          </button>
+        ))}
+      </div>
+      <button onClick={handleNext} className="px-4 py-2 bg-gray-200 rounded-full">▶</button>
+    </div>
+    <h3 className="font-bold text-xl text-gray-800">Fitur dan Benefit</h3>
+    <ul className="mt-2 text-gray-700">
+      {packages[selectedPackage]?.features.map((feature, index) => (
+        <li key={index} className="flex items-center">
+          <span className="text-green-500 mr-2">•</span>
+          {feature}
+        </li>
+      ))}
+    </ul>
+  </div>
+</div>
+
         </div>
         <div className="mt-6 text-sm text-gray-500">*Fitur lain dapat dikonsultasikan secara gratis</div>
       </div>
