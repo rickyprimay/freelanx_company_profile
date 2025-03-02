@@ -48,7 +48,7 @@ export default function Faq() {
             Frequently Asked Questions
           </h2>
           <p className="md:text-xl md:leading-7 text-base mt-2">
-            Unsure about subscription design?
+            Beberapa pertanyaan yang mungkin bisa anda tanyakan
           </p>
         </div>
 

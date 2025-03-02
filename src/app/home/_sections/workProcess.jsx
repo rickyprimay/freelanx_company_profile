@@ -1,91 +1,84 @@
+import { SectionTitle } from "@/components/sectionTitle";
+
+const steps = [
+  {
+    stage: "Tahap Pra-Produksi",
+    color: "bg-blue-500",
+    processes: [
+      { number: "1", title: "Konsultasi Kebutuhan" },
+      { number: "2", title: "Analisis Spesifikasi Aplikasi" },
+      { number: "3", title: "Pembuatan MOU" },
+      { number: "4", title: "Deal Project", highlight: "text-blue-500 font-bold", border: "bg-blue-200 border-blue-600 text-blue-600" },
+    ],
+  },
+  {
+    stage: "Tahap Produksi",
+    color: "bg-green-500",
+    processes: [
+      { number: "5", title: "Pembuatan Design UI/UX" },
+      { number: "6", title: "Revisi Design UI/UX" },
+      { number: "7", title: "Implementasi Aplikasi dan Database" },
+      { number: "8", title: "Revisi Akhir", highlight: "text-green-500 font-bold", border: "bg-green-200 border-green-600 text-green-600" },
+    ],
+  },
+  {
+    stage: "Tahap Pasca-Produksi",
+    color: "bg-red-500",
+    processes: [
+      { number: "9", title: "Penyerahan Project" },
+      { number: "10", title: "Pembuatan Dokumentasi Aplikasi" },
+      { number: "11", title: "Project Done", highlight: "text-red-500 font-bold", border: "bg-red-200 border-red-600 text-red-600" },
+    ],
+  },
+];
+
 export default function WorkProcess() {
   return (
-    <section id="how" className="lg:pt-25 pt-15">
-        <div className="container">
-          <div className="text-center pb-15 fadeInUp" data-delay="0.2">
-            <h3
-              className="border border-[#bebebe] py-2.5 px-5 rounded-3xl md:text-base md:leading-5 text-sm inline-block font-normal mb-[5px]">
-              <i className="ri-arrow-right-up-line text-primary"></i>
-              Work Process
-            </h3>
-            <h2
-              className="xl:leading-[90px] xl:text-[80px] md:leading-[60px] md:text-[50px] leading-[50px] text-[40px] text-black-100 font-medium">
-              We design. You grow</h2>
-            <p className="md:text-xl md:leading-7 text-base mt-2">Our process is as simple as possible.</p>
-          </div>
-
-          <div className="grid lg:grid-cols-3 gap-x-6 gap-y-12.5 lg:pt-15 pt-0">
-            <div className="flex flex-col items-center text-center relative sm:px-[25px] px-0 ">
-              <div
-                className="lg:w-[65px] lg:h-[65px] w-12.5 h-12.5 rounded-full flex items-center justify-center border border-[rgba(0,0,0,.08)] relative">
-                <i className="ri-shake-hands-line text-[25px]"></i>
-                <div
-                  className="overlay-list absolute -right-2 -top-2 bg-primary flex justify-center items-center text-white lg:w-7.5 lg:h-7.5 w-6 h-6 rounded-full">
-                  <span className="lg:font-medium text-sm">01</span>
-                </div>
-              </div>
-              <div className="lg:pt-6 pt-5">
-                <div className="title-box">
-                  <h3 className="lg:text-[32px] text-[26px] lg:leading-[30px] font-bold"><a href="#">Subscribe</a>
-                  </h3>
-                </div>
-                <div className="text-box lg:mt-[22px] mt-4">
-                  <p className="text-lg font-medium leading-7">Select your plan that fits your needs, get
-                    access to Trello board within 24 hours,
-                    and start listing your requests.</p>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-col items-center text-center relative sm:px-[25px] px-0 ">
-              <div className="absolute top-0 left-[-110px] opacity-50 lg:block hidden">
-                <img src="assets/images/shapes/workprocess-shape2.png" alt="shapes" />
-              </div>
-              <div
-                className="lg:w-[65px] lg:h-[65px] w-12.5 h-12.5 rounded-full flex items-center justify-center border border-[rgba(0,0,0,.08)] relative">
-                <i className="ri-global-fill text-[25px]"></i>
-                <div
-                  className="overlay-list absolute -right-2 -top-2 bg-primary flex justify-center items-center text-white lg:w-7.5 lg:h-7.5 w-6 h-6 rounded-full">
-                  <span className="lg:font-medium text-sm">02</span>
-                </div>
-              </div>
-              <div className="lg:pt-6 pt-5">
-                <div className="title-box">
-                  <h3 className="lg:text-[32px] text-[26px] lg:leading-[30px] font-bold"><a href="#">Receive</a>
-                  </h3>
-                </div>
-                <div className="text-box lg:mt-[22px] mt-4">
-                  <p className="text-lg font-medium leading-7">Start receiving your designs within 2-3
-                    business days, or even sooner for smaller
-                    tasks. Yes, it can be that fast.</p>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-col items-center text-center relative sm:px-[25px] px-0 ">
-              <div className="absolute top-0 left-[-110px] opacity-50 lg:block hidden">
-                <img src="assets/images/shapes/workprocess-shape1.png" alt="shapes" />
-              </div>
-              <div
-                className="lg:w-[65px] lg:h-[65px] w-12.5 h-12.5 rounded-full flex items-center justify-center border border-[rgba(0,0,0,.08)] relative">
-                <i className="ri-stack-line text-[25px]"></i>
-                <div
-                  className="overlay-list absolute -right-2 -top-2 bg-primary flex justify-center items-center text-white lg:w-7.5 lg:h-7.5 w-6 h-6 rounded-full">
-                  <span className="lg:font-medium text-sm">03</span>
-                </div>
-              </div>
-              <div className="lg:pt-6 pt-5">
-                <div className="title-box">
-                  <h3 className="lg:text-[32px] text-[26px] lg:leading-[30px] font-bold"><a href="#">Continue</a>
-                  </h3>
-                </div>
-                <div className="text-box lg:mt-[22px] mt-4">
-                  <p className="text-lg font-medium leading-7">Approve designs or request revisions; we're not
-                    done until you're thrilled. Your
-                    satisfaction is our commitment.</p>
-                </div>
-              </div>
-            </div>
-          </div>
+    <section id="how" className="lg:pt-20 pt-10 pb-10 bg-gray-100 mt-2">
+      <div className="container">
+        <div className="text-center pb-10 fadeInUp" data-delay="0.2">
+          <SectionTitle title="Tahap Pengerjaan" />
+          <h2 className="md:text-5xl text-3xl font-bold mt-3 tracking-wide">
+            Bagaimana proses produksi di <span className="text-blue-500">Freelanxx</span> berlangsung?
+          </h2>
         </div>
-      </section>
-  )
+
+        <div className="space-y-8">
+          {steps.map((step, index) => (
+            <div key={index} className="bg-white rounded-2xl shadow-lg flex items-center">
+              <div className={`flex-shrink-0 ${step.color} text-white text-xl font-bold py-8 px-4 w-[250px] text-center rounded-l-2xl`}>
+                {step.stage}
+              </div>
+
+              <div className="flex items-center space-x-4 p-4 w-full relative">
+                {step.processes.map((process, i) => (
+                  <div key={i} className="flex flex-col items-center relative w-full">
+                    {i > 0 && (
+                      <div className="absolute top-4 left-[-50%] w-full h-1 bg-black"></div>
+                    )}
+
+                    <div
+                      className={`w-10 h-10 rounded-full flex items-center justify-center border-2 ${
+                        process.highlight ? `${process.border}` : "bg-white border-black text-black"
+                      } relative z-10`}
+                    >
+                      {process.number}
+                    </div>
+
+                    <p className={`text-center text-sm mt-2 ${process.highlight || "text-gray-800"}`}>
+                      {process.title}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <p className="text-xs text-gray-500 mt-6 text-center">
+          *Note: Jasa Revisi Design dibicarakan pada saat Konsultasi
+        </p>
+      </div>
+    </section>
+  );
 }

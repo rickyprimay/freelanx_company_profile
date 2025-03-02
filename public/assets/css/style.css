@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Manrope:wght@200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -11,7 +11,7 @@
   --secondary-color: #000000;
   --primary-color: #ff4f01;
   --background: #fff6ec;
-  --bricolage: Bricolage Grotesque, sans-serif;
+  --roboto: "Roboto", sans-serif;
 }
 
 html {
@@ -24,7 +24,7 @@ body {
   font-weight: 400;
   line-height: 30px;
   font-size: 16px;
-  font-family: "Manrope", sans-serif;
+  font-family: var(--roboto);
   overflow-x: hidden;
 }
 
@@ -35,7 +35,7 @@ h4,
 h5,
 h6 {
   color: var(--black-100);
-  font-family: Bricolage Grotesque, sans-serif;
+  font-family: var(--roboto);
 }
 
 .btn {

@@ -1,14 +1,13 @@
-"use client"; // Pastikan komponen ini dijalankan di sisi klien
+"use client";
 
 import { useState } from "react";
 import Lightbox from "yet-another-react-lightbox";
-import "yet-another-react-lightbox/styles.css"; // Import stylesheet YARL
+import "yet-another-react-lightbox/styles.css"; 
 
 export default function Projects() {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxIndex, setLightboxIndex] = useState(0);
 
-  // Daftar gambar untuk lightbox
   const images = [
     { src: "/assets/images/projects/work7.jpg", alt: "A Branch with Flowers" },
     { src: "/assets/images/projects/work1.jpg", alt: "Orange Rose Flower" },
@@ -16,7 +15,6 @@ export default function Projects() {
     { src: "/assets/images/projects/work5.jpg", alt: "Orange Rose Flower" },
   ];
 
-  // Fungsi untuk membuka lightbox dengan indeks tertentu
   const openLightbox = (index) => {
     setLightboxIndex(index);
     setLightboxOpen(true);
@@ -58,7 +56,6 @@ export default function Projects() {
         </div>
       </div>
 
-      {/* Lightbox */}
       <Lightbox
         open={lightboxOpen}
         close={() => setLightboxOpen(false)}
@@ -67,4 +64,4 @@ export default function Projects() {
       />
     </div>
   );
-}
+  }

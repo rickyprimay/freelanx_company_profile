@@ -1,6 +1,5 @@
 import { Roboto, Roboto_Mono } from "next/font/google";
 import "./globals.css";
-import Script from "next/script";
 
 const robotoSans = Roboto({
   variable: "--font-roboto-sans",
@@ -23,6 +22,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+
+        <link rel="icon" href="/assets/images/freelanx_common_assets/freelanxx.svg" />
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" />
