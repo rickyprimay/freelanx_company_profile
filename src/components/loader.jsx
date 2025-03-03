@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from "react";
 import { gsap } from "gsap";
+import Image from "next/image";
+import FreelanxxLogo from "../../public/assets/images/freelanx_common_assets/freelanxx.svg";
 
 export default function Loader() {
   const [loading, setLoading] = useState(true);
@@ -13,7 +15,7 @@ export default function Loader() {
     const curve = "M0 502S175 272 500 272s500 230 500 230V0H0Z";
     const flat = "M0 2S175 1 500 1s500 1 500 1V0H0Z";
 
-    tl.to(".preloader-heading .load-text , .preloader-heading .cont", {
+    tl.to(".preloader-heading .load-text , .preloader-heading .logo", {
       delay: 1.5,
       y: -100,
       opacity: 0,
@@ -47,7 +49,15 @@ export default function Loader() {
       <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
         <path id="preloaderSvg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
       </svg>
-      <div className="preloader-heading absolute top-0 left-0 flex justify-center items-center w-full h-full">
+      <div className="preloader-heading absolute top-0 left-0 flex flex-col items-center justify-center w-full h-full">
+        <Image
+          src={FreelanxxLogo}
+          alt="Freelanxx Logo"
+          width={100}
+          height={100}
+          className="logo mb-4"
+        />
+
         <div className="load-text text-xl font-extralight uppercase tracking-[15px] text-white">
           {"Loading".split("").map((char, index) => (
             <span key={index} className="inline-block">{char}</span>
