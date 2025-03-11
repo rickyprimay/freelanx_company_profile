@@ -1,3 +1,5 @@
+"use client";
+
 import Loader from '@/components/loader';
 import Navbar from '@/components/navbar';
 import Hero from './_sections/hero';
@@ -9,10 +11,14 @@ import Pricing from './_sections/pricing';
 import Faq from './_sections/faq';
 import Book from './_sections/book';
 import Footer from '@/components/footer';
+import { useEffect } from "react";
+import AOSInitializer from '@/components/AOSInitializer';
 
 export default function Home() {
+
   return (
     <>
+    <AOSInitializer />
 
       {/* Preloader */}
       <Loader />

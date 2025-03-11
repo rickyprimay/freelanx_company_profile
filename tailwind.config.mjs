@@ -10,10 +10,10 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        primary: "#2563eb", // Biru khas branding
-        secondary: "#f59e0b", // Oranye khas branding
-        accent: "#10b981", // Hijau khas branding
-        muted: "#6b7280", // Abu-abu lembut
+        primary: "#2563eb", 
+        secondary: "#f59e0b",
+        accent: "#10b981", 
+        muted: "#6b7280", 
       },
       spacing: {
         18: "4.5rem",

@@ -1,19 +1,27 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Lightbox from "yet-another-react-lightbox";
-import "yet-another-react-lightbox/styles.css"; 
+import "yet-another-react-lightbox/styles.css";
+import Image from "next/image";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { SectionTitle } from "@/components/sectionTitle";
+
+const images = [
+  { src: "/assets/images/freelanx_common_assets/project/ticket.png", alt: "Ticketify", type: "Website" },
+  { src: "/assets/images/freelanx_common_assets/project/ndoroKojo-app.png", alt: "Ndoro Kojo App", type: "Mobile App" },
+  { src: "/assets/images/freelanx_common_assets/project/ndoroKojo-web.png", alt: "Ndoro Kojo Web", type: "Website" },
+  { src: "/assets/images/freelanx_common_assets/project/spmi-polines.png", alt: "Spmi Polines", type: "Website" },
+];
 
 export default function Projects() {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxIndex, setLightboxIndex] = useState(0);
 
-  const images = [
-    { src: "/assets/images/projects/work7.jpg", alt: "A Branch with Flowers" },
-    { src: "/assets/images/projects/work1.jpg", alt: "Orange Rose Flower" },
-    { src: "/assets/images/projects/work6.jpg", alt: "Green Plant on a Desk" },
-    { src: "/assets/images/projects/work5.jpg", alt: "Orange Rose Flower" },
-  ];
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
 
   const openLightbox = (index) => {
     setLightboxIndex(index);
@@ -23,32 +31,36 @@ export default function Projects() {
   return (
     <div className="lg:pt-25 pt-15" id="projects">
       <div className="container">
-        <div className="text-center pb-15 fadeInUp" data-delay="0.2">
-          <h3 className="border border-[#bebebe] py-2.5 px-5 rounded-3xl md:text-base md:leading-5 text-sm inline-block font-normal mb-[5px]">
-            <i className="ri-arrow-right-up-line text-primary"></i> Projects
-          </h3>
-          <h2 className="xl:leading-[90px] xl:text-[80px] md:leading-[60px] md:text-[50px] leading-[50px] text-[40px] text-black-100 font-medium">
-            Featured Projects
+        <div className="text-center pb-15" data-aos="fade-up">
+          <SectionTitle title="Portfolio" />
+          <h2 className="xl:leading-[90px] xl:text-[80px] md:leading-[60px] md:text-[50px] leading-[50px] text-[40px] text-black-100 font-medium" data-aos="zoom-in">
+            Portfolio
           </h2>
-          <p className="md:text-xl md:leading-7 text-base mt-2">Get a glimpse of our work</p>
+          <p className="md:text-xl md:leading-7 text-base mt-2">
+            Beberapa project professional yang sudah kami kerjakan
+          </p>
         </div>
         <div className="grid md:grid-cols-2 gap-6">
           {images.map((image, index) => (
-            <div key={index}>
+            <div key={index} className="w-full h-[300px] relative" data-aos="fade-up">
               <div
-                className="rounded-lg overflow-hidden relative after:absolute after:left-0 after:top-0 after:w-full after:h-full after:bg-[linear-gradient(0deg,_rgba(0,0,0,.3),_transparent)] after:opacity-0 hover:after:opacity-100 after:transition-all after:duration-500 group cursor-pointer"
+                className="w-full h-full rounded-lg overflow-hidden relative after:absolute after:left-0 after:top-0 after:w-full after:h-full after:bg-[linear-gradient(0deg,_rgba(0,0,0,.3),_transparent)] after:opacity-0 hover:after:opacity-100 after:transition-all after:duration-500 group cursor-pointer"
                 onClick={() => openLightbox(index)}
               >
-                <img
+                <Image
                   src={image.src}
                   alt={image.alt}
+                  layout="fill"
+                  objectFit="cover"
                   className="group-hover:blur-[1.5px] group-hover:scale-[1.04] transition-all duration-500"
                 />
                 <span className="absolute top-4 right-4 inline-block rounded-[32px] bg-[rgba(255,79,1,.5)] py-[7px] px-[14px] text-white text-sm uppercase tracking-wider leading-[30px] font-medium">
-                  {index === 0 ? "Website" : index === 1 ? "Apps" : index === 2 ? "Landing" : "Mockup"}
+                  {image.type}
                 </span>
                 <div className="z-20 absolute left-7.5 -bottom-0 opacity-0 group-hover:opacity-100 group-hover:bottom-6 transition-all duration-500">
-                  <h1 className="lg:text-3xl text-[26px] font-semibold text-white">{image.alt}</h1>
+                  <h1 className="lg:text-3xl text-[26px] font-semibold text-white">
+                    {image.alt}
+                  </h1>
                 </div>
               </div>
             </div>
@@ -64,4 +76,4 @@ export default function Projects() {
       />
     </div>
   );
-  }
+}

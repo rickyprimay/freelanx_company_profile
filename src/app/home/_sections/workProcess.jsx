@@ -1,3 +1,6 @@
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { SectionTitle } from "@/components/sectionTitle";
 
 const steps = [
@@ -33,30 +36,33 @@ const steps = [
 ];
 
 export default function WorkProcess() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
+
   return (
     <section id="how" className="lg:pt-20 pt-10 pb-10 bg-gray-100 mt-2">
       <div className="container">
-        <div className="text-center pb-10 fadeInUp" data-delay="0.2">
-          <SectionTitle title="Tahap Pengerjaan" />
-          <h2 className="md:text-5xl text-3xl font-bold mt-3 tracking-wide">
+        <div className="text-center pb-10 fadeInUp" data-aos="fade-up" data-aos-delay="200">
+          <SectionTitle title="Tahap Pengerjaan"/>
+          <h2 className="md:text-5xl text-3xl font-bold mt-3 tracking-wide" data-aos="zoom-in">
             Bagaimana proses produksi di <span className="text-blue-500">Freelanxx</span> berlangsung?
           </h2>
         </div>
 
         <div className="space-y-8">
           {steps.map((step, index) => (
-            <div key={index} className="bg-white rounded-2xl shadow-lg flex items-center overflow-x-auto">
-              <div className={`flex-shrink-0 ${step.color} text-white text-xl font-bold py-8 px-4 w-[250px] text-center rounded-l-2xl`}>
+            <div key={index} className="bg-white rounded-2xl shadow-lg flex overflow-x-auto h-full" data-aos="fade-up" data-aos-delay={index * 200}>
+              <div className={`flex-shrink-0 ${step.color} text-white text-xl font-bold w-[250px] flex items-center justify-center text-center rounded-l-2xl p-4`}>
                 {step.stage}
               </div>
-
-              <div className="flex items-center space-x-4 p-4 w-full min-w-max relative">
+              <div className="flex flex-1 items-stretch w-full p-4 min-w-max relative">
                 {step.processes.map((process, i) => (
-                  <div key={i} className="flex flex-col items-center relative w-full min-w-[120px]">
-                    {i > 0 && (
-                      <div className="absolute top-4 left-[-50%] w-full h-1 bg-black"></div>
-                    )}
-
+                  <div key={i} className="flex flex-col items-center relative flex-1">
+                    {i > 0 && <div className="absolute top-4 left-[-50%] w-full h-1 bg-black"></div>}
                     <div
                       className={`w-10 h-10 rounded-full flex items-center justify-center border-2 ${
                         process.highlight ? `${process.border}` : "bg-white border-black text-black"
@@ -64,8 +70,7 @@ export default function WorkProcess() {
                     >
                       {process.number}
                     </div>
-
-                    <p className={`text-center text-sm mt-2 ${process.highlight || "text-gray-800"}`}>
+                    <p className={`text-center text-sm mt-2 flex items-center justify-center min-h-[60px] px-2 ${process.highlight || "text-gray-800"}`}>
                       {process.title}
                     </p>
                   </div>
@@ -74,10 +79,6 @@ export default function WorkProcess() {
             </div>
           ))}
         </div>
-
-        <p className="text-xs text-gray-500 mt-6 text-center">
-          *Note: Jasa Revisi Design dibicarakan pada saat Konsultasi
-        </p>
       </div>
     </section>
   );

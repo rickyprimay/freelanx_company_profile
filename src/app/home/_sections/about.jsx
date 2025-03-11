@@ -1,3 +1,8 @@
+"use client";
+
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Image from "next/image";
 import FreelanxxLogo from "../../../../public/assets/images/freelanx_common_assets/freelanxx.svg";
 import { SectionTitle } from "@/components/sectionTitle";
@@ -28,13 +33,16 @@ const features = [
 ];
 
 export default function About() {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
+
   return (
     <section className="lg:pt-20 pt-12">
       <div className="container">
-        <div className="text-center pb-10 fadeInUp" data-delay="0.2">
+        <div className="text-center pb-10" data-aos="fade-up" data-aos-delay="200">
           <SectionTitle title="Tentang Kami" />
-
-          <p className="md:text-6xl text-4xl font-bold mt-3 tracking-wide">
+          <p className="md:text-6xl text-4xl font-bold mt-3 tracking-wide" data-aos="zoom-in">
             "<span className="text-blue-500">Inovasi</span>,{" "}
             <span className="text-green-600">Elevasi</span>, dan{" "}
             <span className="text-orange-500">Dominasi</span>
@@ -43,23 +51,23 @@ export default function About() {
         </div>
 
         <div
-          className="lg:w-[80%] w-full mx-auto lg:py-4 lg:px-20 py-4 px-10 fadeInUp flex flex-col lg:flex-row items-center justify-between gap-12"
-          data-delay="0.2"
+          className="lg:w-[80%] w-full mx-auto lg:py-4 lg:px-20 py-4 px-10 flex flex-col lg:flex-row items-center justify-between gap-12"
+          data-aos="fade-up" data-aos-delay="400"
         >
           <div className="flex items-center justify-center">
-            <div className="h-[200px] w-[200px] flex items-center justify-center shadow-[0_10px_30px_rgba(0,0,0,0.1)] rounded-full">
+            <div className="h-[200px] w-[200px] flex items-center justify-center shadow-lg rounded-full" data-aos="fade-up" data-aos-delay="600">
               <Image
                 src={FreelanxxLogo}
                 alt="Freelanxx Logo"
-                className="w-24 z-10 h-24 md:w-32 md:h-32 object-contain"
+                className="w-24 h-24 md:w-32 md:h-32 object-contain"
               />
             </div>
           </div>
 
-          <div className="bg-white p-6 md:p-10 rounded-3xl shadow-xl w-full lg:w-[50%]">
+          <div className="bg-white p-6 md:p-10 rounded-3xl shadow-xl w-full lg:w-[50%]" data-aos="fade-up" data-aos-delay="800">
             <h3 className="text-lg md:text-xl leading-relaxed text-gray-900">
-              Berdiri sejak 2024 di Semarang,{" "}
-              <span className="text-blue-500 font-semibold">Freelanxx</span>{" "}
+              Berdiri sejak 2024 di Semarang, {" "}
+              <span className="text-blue-500 font-semibold">Freelanxx</span> {" "}
               menghadirkan solusi software inovatif dengan teknologi mutakhir,
               desain modern, dan performa tinggi. Dari web, mobile, hingga
               desktop, kami siap mengoptimalkan bisnis Anda dengan sistem yang handal, aman, dan scalable.
@@ -70,13 +78,14 @@ export default function About() {
           </div>
         </div>
       </div>
+
       <div className="grid lg:grid-cols-3 sm:grid-cols-1 gap-6 text-center mt-12 container">
         {features.map((feature, index) => (
-          <FeatureCard key={index} {...feature} />
+          <div key={index} data-aos="fade-up" data-aos-delay={1000 + index * 200}>
+            <FeatureCard {...feature} index={index} />
+          </div>
         ))}
       </div>
-
-
     </section>
   );
 }

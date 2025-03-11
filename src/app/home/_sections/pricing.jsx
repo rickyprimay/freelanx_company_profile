@@ -1,9 +1,18 @@
 "use client";
 
 import { SectionTitle } from "@/components/sectionTitle";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Pricing() {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: true,
+    });
+  }, []);
+
   const [selectedPackage, setSelectedPackage] = useState("F&B");
   const [selectedMajorPackage, setSelectedMajorPackage] = useState("Paket Usaha");
   const scrollRef = useRef(null);
@@ -67,14 +76,14 @@ export default function Pricing() {
   };
 
   return (
-    <section id="pricing" className="py-16 text-center bg-gray-50">
+    <section id="pricing" className="py-16 text-center bg-gray-50" data-aos="fade-up">
       <div className="container mx-auto max-w-4xl px-4">
         <SectionTitle title="Daftar Harga" />
-        <h2 className="text-4xl font-bold mb-4">
+        <h2 className="text-4xl font-bold mb-4" data-aos="zoom-in">
           Dengan Harga yang <span className="text-blue-500">Sangat Terjangkau!</span>
         </h2>
 
-        <div className="bg-white shadow-lg rounded-2xl p-8 mt-8 border border-gray-200">
+        <div className="bg-white shadow-lg rounded-2xl p-8 mt-8 border border-gray-200" data-aos="fade-up">
           <div className="flex justify-center gap-4 mb-6">
             <button
               className={`px-6 py-2 rounded-full text-sm font-semibold ${selectedMajorPackage === "Paket Usaha" ? "bg-[#004A70] text-white" : "bg-white text-[#004A70] border border-[#004A70]"
@@ -93,7 +102,7 @@ export default function Pricing() {
           </div>
           {selectedMajorPackage === "Paket Usaha" && (
             <div className="flex flex-col lg:flex-row items-start justify-between gap-8">
-              <div className="sm:text-center md:text-start lg:text-start w-full lg:w-1/2">
+              <div className="sm:text-center md:text-start lg:text-start w-full lg:w-1/2" data-aos="fade-up">
                 <p className="text-2xl font-bold text-gray-500">Mulai dari</p>
                 <p className="text-black line-through text-4xl mt-2">Rp 1.000.000</p>
                 <p className="text-5xl font-bold text-red-500 mt-2">
@@ -106,7 +115,7 @@ export default function Pricing() {
                 </div>
               </div>
 
-              <div className="w-full max-w-md sm:max-w-lg border p-3 rounded-xl shadow-soft-lg">
+              <div className="w-full max-w-md sm:max-w-lg border p-3 rounded-xl shadow-soft-lg" data-aos="fade-up">
                 <div className="flex items-center gap-4 mb-6">
                   <button onClick={handlePrev} className="px-4 py-2 bg-gray-200 rounded-full">◀</button>
                   <div ref={scrollRef} className="flex overflow-x-auto gap-4 whitespace-nowrap scrollbar p-2">
@@ -133,7 +142,7 @@ export default function Pricing() {
             </div>
           )}
           {selectedMajorPackage === "Paket Aplikasi Custom" && (
-            <div className="flex flex-col lg:flex-row items-start justify-between gap-8">
+            <div className="flex flex-col lg:flex-row items-start justify-between gap-8" data-aos="fade-up">
               <div className="sm:text-center md:text-start lg:text-start w-full lg:w-1/2">
                 <p className="text-2xl font-bold text-gray-500">Mulai dari</p>
                 <p className="text-black line-through text-4xl mt-2">Rp 1.800.000</p>
@@ -158,7 +167,6 @@ export default function Pricing() {
               </div>
             </div>
           )}
-
         </div>
         <div className="mt-6 text-sm text-gray-500">*Fitur lain dapat dikonsultasikan secara gratis</div>
       </div>

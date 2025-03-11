@@ -3,6 +3,6 @@ import Home from "./home/home";
 
 export default function Base() {
   return (
-    Home()
+    <Home />
   );
 }

@@ -1,6 +1,14 @@
-const FeatureCard = ({ icon, iconColor, bgColor, title, description }) => {
+import React from "react";
+
+const FeatureCard = ({ icon, iconColor, bgColor, title, description, index }) => {
+  const delay = (index ?? 0) * 100; 
+
   return (
-    <div className="flex flex-col items-center p-6 bg-white rounded-3xl shadow-soft-lg">
+    <div
+      className="flex flex-col items-center p-6 bg-white rounded-3xl shadow-soft-lg"
+      data-aos="fade-up"
+      data-aos-delay={String(delay)}
+    >
       <div className={`w-14 h-14 ${bgColor} rounded-full flex items-center justify-center`}>
         <i className={`${icon} ${iconColor} text-3xl`}></i>
       </div>

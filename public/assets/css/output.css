@@ -1071,6 +1071,9 @@ video {
   .font-outline-4 {
     -webkit-text-stroke: 4px white;
   }
+  /* .font-outline-1{
+    -webkit-text-stroke: 1px black;
+  } */
 }
 
 .p-5{
