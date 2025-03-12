@@ -23,11 +23,15 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
 
+        <meta property="og:title" content="Freelanxx - Jasa Pembuatan Aplikasi Web, Mobile, dan Desktop" />
+        <meta property="og:description" content="Jasa pembuatan aplikasi web, android, ios, dan desktop berkualitas tinggi untuk bisnis Anda, langsung dari tangan para ahli." />
         <meta property="og:image" content="https://www.freelanxx.com/assets/images/freelanx_common_assets/logo_header.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
         <meta property="og:url" content="https://www.freelanxx.com" />
         <meta property="og:type" content="website" />
-
-        <link rel="icon" href="/assets/images/freelanx_common_assets/freelanxx.svg" />
+    
+        <link rel="icon" href="https://www.freelanxx.com/assets/images/freelanx_common_assets/freelanxx.svg" />
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" />
