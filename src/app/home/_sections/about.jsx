@@ -65,6 +65,12 @@ export default function About() {
           </div>
 
           <div className="bg-white p-6 md:p-10 rounded-3xl shadow-xl w-full lg:w-[50%]" data-aos="fade-up" data-aos-delay="800">
+            <Image
+              src="/assets/images/freelanx_common_assets/bg_lines_about_us.png"
+              alt="Background Shape"
+              fill
+              className="object-cover absolute inset-0 opacity-100"
+            />
             <h3 className="text-lg md:text-xl leading-relaxed text-gray-900">
               Berdiri sejak 2024 di Semarang, {" "}
               <span className="text-blue-500 font-semibold">Freelanxx</span> {" "}
@@ -72,7 +78,7 @@ export default function About() {
               desain modern, dan performa tinggi. Dari web, mobile, hingga
               desktop, kami siap mengoptimalkan bisnis Anda dengan sistem yang handal, aman, dan scalable.
             </h3>
-            <p className="text-lg md:text-xl leading-relaxed text-gray-900">
+            <p className="text-lg md:text-xl leading-relaxed text-gray-900 mt-4">
               Saatnya naik level dengan solusi digital yang cerdas, cepat, dan tanpa batas! 🚀🔥
             </p>
           </div>

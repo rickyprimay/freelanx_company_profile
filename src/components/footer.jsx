@@ -9,7 +9,7 @@ export default function Footer() {
           <div>
             <h2 className="text-lg font-semibold text-gray-900">Freelanxx | IT Solutions</h2>
             <p className="mt-2 text-gray-500">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure ratione quisquam exercitationem vel explicabo illum perspiciatis laborum assumenda recusandae at architecto, quo voluptate est neque voluptatibus aliquam asperiores quas sapiente!
+            Didirikan pada 2024 di Semarang, Freelanxx menghadirkan solusi software inovatif untuk web, mobile, dan desktop. Mengoptimalkan bisnis Anda dengan sistem yang handal, aman, dan scalable.
             </p>
             <div className="flex space-x-4 mt-4 text-gray-700">
               <i className="ri-instagram-line text-xl"></i>
