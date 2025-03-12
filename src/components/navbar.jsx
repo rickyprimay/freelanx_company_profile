@@ -50,7 +50,7 @@ export default function Navbar() {
           >
             <ul className="flex lg:flex-row flex-col p-1">
               {[
-                { href: "#how", label: "Beranda" },
+                { href: "#home", label: "Beranda" },
                 { href: "#services", label: "Layanan" },
                 { href: "#projects", label: "Portfolio" },
                 { href: "#pricing", label: "Harga" },

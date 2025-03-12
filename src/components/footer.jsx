@@ -21,10 +21,10 @@ export default function Footer() {
           <div>
             <h2 className="text-lg font-semibold text-gray-900">Beranda</h2>
             <ul className="mt-2 space-y-2 text-gray-500">
-              <li><Link href="/">Layanan</Link></li>
-              <li><Link href="/">Portofolio</Link></li>
-              <li><Link href="/">Harga</Link></li>
-              <li><Link href="/">FAQs</Link></li>
+              <li><Link href="#services">Layanan</Link></li>
+              <li><Link href="#projects">Portofolio</Link></li>
+              <li><Link href="#pricing">Harga</Link></li>
+              <li><Link href="#faqs">FAQs</Link></li>
             </ul>
           </div>
 
