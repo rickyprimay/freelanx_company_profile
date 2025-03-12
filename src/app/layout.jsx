@@ -23,9 +23,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
 
-      <meta property="og:image" content="https://www.freelanxx.com/assets/images/freelanx_common_assets/logo_header.png" />
-      <meta property="og:url" content="https://www.freelanxx.com" />
-      <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://www.freelanxx.com/assets/images/freelanx_common_assets/logo_header.png" />
+        <meta property="og:url" content="https://www.freelanxx.com" />
+        <meta property="og:type" content="website" />
 
         <link rel="icon" href="/assets/images/freelanx_common_assets/freelanxx.svg" />
 
