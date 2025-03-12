@@ -15,7 +15,7 @@ const robotoMono = Roboto_Mono({
 
 export const metadata = {
   title: "Freelanxx - Jasa Pembuatan Aplikasi Web, Mobile, dan Desktop",
-  description: "Fakhri kopet ;v",
+  description: "Jasa pembuatan aplikasi web, mobile, dan desktop berkualitas tinggi untuk bisnis Anda, langsung dari tangan para ahli. Dirancang dengan teknologi mutakhir, keamanan tingkat tinggi, serta performa optimal untuk memastikan bisnis Anda berkembang pesat. Butuh solusi aplikasi custom yang inovatif, scalable, dan terpercaya? Percayakan proyek Anda kepada tim ahli kami dan wujudkan aplikasi impian Anda dengan kualitas terbaik!",
 };
 
 export default function RootLayout({ children }) {
