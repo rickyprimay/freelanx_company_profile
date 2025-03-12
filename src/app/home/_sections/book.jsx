@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Book() {
   return (
-    <section id="book" className="lg:pt-25 pt-15">
+    <section id="book" className="lg:pt-25 pt-15" data-aos="fade-up">
       <div className="container">
         <div className="relative mx-auto grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 lg:px-12.5 py-7.5 px-8 rounded-[20px] bg-gradient-to-r from-[#00455F] to-[#00A5E3] text-white items-center overflow-hidden">
           <Image
@@ -12,7 +12,7 @@ export default function Book() {
             className="object-cover absolute inset-0 opacity-80"
           />
 
-          <div className="relative z-10 space-y-2 text-left">
+          <div className="relative z-10 space-y-2 text-left" data-aos="zoom-in">
             <h2 className="text-3xl text-white font-bold">
               Konsultasi dengan Freelanxx - Gratis!
             </h2>

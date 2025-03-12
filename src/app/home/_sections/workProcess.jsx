@@ -1,6 +1,4 @@
 import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import { SectionTitle } from "@/components/sectionTitle";
 
 const steps = [
@@ -36,12 +34,6 @@ const steps = [
 ];
 
 export default function WorkProcess() {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: true,
-    });
-  }, []);
 
   return (
     <section id="how" className="lg:pt-20 pt-10 pb-10 bg-gray-100 mt-2">

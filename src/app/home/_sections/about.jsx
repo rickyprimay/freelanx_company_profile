@@ -1,8 +1,3 @@
-"use client";
-
-import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import Image from "next/image";
 import FreelanxxLogo from "../../../../public/assets/images/freelanx_common_assets/freelanxx.svg";
 import { SectionTitle } from "@/components/sectionTitle";
@@ -33,9 +28,6 @@ const features = [
 ];
 
 export default function About() {
-  useEffect(() => {
-    AOS.init({ duration: 1000, once: true });
-  }, []);
 
   return (
     <section className="lg:pt-20 pt-12">

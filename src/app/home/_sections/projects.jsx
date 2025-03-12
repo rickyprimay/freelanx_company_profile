@@ -4,8 +4,6 @@ import { useState, useEffect } from "react";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import Image from "next/image";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import { SectionTitle } from "@/components/sectionTitle";
 
 const images = [
@@ -18,10 +16,6 @@ const images = [
 export default function Projects() {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxIndex, setLightboxIndex] = useState(0);
-
-  useEffect(() => {
-    AOS.init({ duration: 1000, once: true });
-  }, []);
 
   const openLightbox = (index) => {
     setLightboxIndex(index);

@@ -65,51 +65,51 @@ export default function Pricing() {
             </button>
           </div>
           {selectedMajorPackage === "Paket Usaha" && (
-  <div className="relative flex flex-col lg:flex-row items-start justify-between gap-8">
-    <div className="sm:text-center md:text-start lg:text-start w-full lg:w-1/2" data-aos="fade-up">
-      <p className="text-2xl font-bold text-gray-500">Mulai dari</p>
-      <div className="relative inline-block">
-        <p className="text-black line-through text-4xl mt-2">Rp 1.000.000</p>
-        <span className="absolute -top-2 -right-10 bg-red-500 text-white text-sm px-2 py-1 rounded-full">20%</span>
-      </div>
-      <p className="text-5xl font-bold text-red-500 mt-2">
-        Rp 800.000 <span className="text-black">Saja!</span>
-      </p>
-      <div className="mt-3">
-        <button className="hover:bg-green-500 hover:text-white px-4 py-1 rounded-xl font-semibold border border-green-500 text-green-500 transition duration-300">
-          Konsultasi Sekarang
-        </button>
-      </div>
-    </div>
+            <div className="relative flex flex-col lg:flex-row items-start justify-between gap-8">
+              <div className="sm:text-center md:text-start lg:text-start w-full lg:w-1/2" data-aos="fade-up">
+                <p className="text-2xl font-bold text-gray-500">Mulai dari</p>
+                <div className="relative inline-block">
+                  <p className="text-black line-through text-4xl mt-2">Rp 1.000.000</p>
+                  <span className="absolute -top-2 -right-10 bg-red-500 text-white text-sm px-2 py-1 rounded-full">20%</span>
+                </div>
+                <p className="text-5xl font-bold text-red-500 mt-2">
+                  Rp 800.000 <span className="text-black">Saja!</span>
+                </p>
+                <div className="mt-3">
+                  <button className="hover:bg-green-500 hover:text-white px-4 py-1 rounded-xl font-semibold border border-green-500 text-green-500 transition duration-300">
+                    Konsultasi Sekarang
+                  </button>
+                </div>
+              </div>
 
-    <div className="w-full max-w-md sm:max-w-lg border p-3 rounded-xl shadow-soft-lg mb-8" data-aos="fade-up">
-      <div ref={scrollRef} className="flex overflow-x-auto gap-4 whitespace-nowrap scrollbar p-2 snap-x snap-mandatory">
-        {packageKeys.map((pkg) => (
-          <button
-            key={pkg}
-            className={`px-6 py-2 rounded-xl text-sm font-semibold flex-shrink-0 snap-center ${selectedPackage === pkg ? "bg-[#29A768] text-white" : "bg-white text-[#29A768] border border-[#29A768]"}`}
-            onClick={() => setSelectedPackage(pkg)}
-          >
-            {pkg}
-          </button>
-        ))}
-      </div>
-      <h3 className="font-bold text-xl text-gray-800">Fitur dan Benefit</h3>
-      <ul className="mt-2 text-gray-700 list-disc list-inside text-start">
-        {packages[selectedPackage]?.features.map((feature, index) => (
-          <li key={index}>{feature}</li>
-        ))}
-      </ul>
-    </div>
+              <div className="w-full max-w-md sm:max-w-lg border p-3 rounded-xl shadow-soft-lg mb-8" data-aos="fade-up">
+                <div ref={scrollRef} className="flex overflow-x-auto gap-4 whitespace-nowrap scrollbar p-2 snap-x snap-mandatory">
+                  {packageKeys.map((pkg) => (
+                    <button
+                      key={pkg}
+                      className={`px-6 py-2 rounded-xl text-sm font-semibold flex-shrink-0 snap-center ${selectedPackage === pkg ? "bg-[#29A768] text-white" : "bg-white text-[#29A768] border border-[#29A768]"}`}
+                      onClick={() => setSelectedPackage(pkg)}
+                    >
+                      {pkg}
+                    </button>
+                  ))}
+                </div>
+                <h3 className="font-bold text-xl text-gray-800">Fitur dan Benefit</h3>
+                <ul className="mt-2 text-gray-700 list-disc list-inside text-start">
+                  {packages[selectedPackage]?.features.map((feature, index) => (
+                    <li key={index}>{feature}</li>
+                  ))}
+                </ul>
+              </div>
 
-    <div className="absolute -bottom-6 -left-8 p-0" data-aos="fade-up">
-  <span className="bg-orange-500 text-white text-md font-bold px-6 py-4 rounded-bl-2xl rounded-tr-2xl">
-    % Diskon Ramadhan
-  </span>
-</div>
+              <div className="absolute -bottom-6 -left-8 p-0" data-aos="fade-up">
+                <span className="bg-orange-500 text-white text-md font-bold px-6 py-4 rounded-bl-2xl rounded-tr-2xl">
+                  % Diskon Ramadhan
+                </span>
+              </div>
 
-  </div>
-)}
+            </div>
+          )}
 
           {selectedMajorPackage === "Paket Aplikasi Custom" && (
             <div className="flex flex-col lg:flex-row items-start justify-between gap-8 mb-8" data-aos="fade-up">
@@ -139,13 +139,13 @@ export default function Pricing() {
                 </ul>
               </div>
               <div className="absolute -bottom-14 -left-8 p-0">
-  <span className="bg-orange-500 text-white text-md font-bold px-6 py-4 rounded-bl-2xl rounded-tr-2xl">
-    % Diskon Ramadhan
-  </span>
-</div>
-              
+                <span className="bg-orange-500 text-white text-md font-bold px-6 py-4 rounded-bl-2xl rounded-tr-2xl">
+                  % Diskon Ramadhan
+                </span>
+              </div>
+
             </div>
-            
+
           )}
         </div>
         <div className="mt-6 text-sm text-gray-500">*Fitur lain dapat dikonsultasikan secara gratis</div>

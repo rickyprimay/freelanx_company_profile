@@ -2,10 +2,6 @@
 
 import ServiceCard from "@/components/Card/serviceCard";
 import { SectionTitle } from "@/components/sectionTitle";
-import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
-
 const services = [
   {
     title: "Website App",
@@ -34,10 +30,6 @@ const services = [
 ];
 
 export default function Services() {
-  useEffect(() => {
-      AOS.init({ duration: 1000, once: true });
-    }, []);
-
   return (
     <section id="services" className="lg:pt-25 pt-15 mb-12">
       <div className="container">
