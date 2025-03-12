@@ -33,6 +33,7 @@ export default function Navbar() {
               width={160}
               height={50}
               className="lg:max-w-[160px] max-w-[120px]"
+              priority
             />
           </Link>
           <button
@@ -59,10 +60,10 @@ export default function Navbar() {
                 <li key={index} className="border-b border-b-black-100 lg:border-b-0">
                   <Link
                     href={item.href}
-                    className={`px-5 py-2.5 inline-block font-medium font-bricolage transition-all duration-500 ${item.special
-                        ? "bg-orange-500 text-white rounded-full hover:bg-orange-600 shadow-md"
-                        : "text-black hover:text-primary"
-                      }`}
+                    className={`px-5 py-2.5 text-sm lg:px-5 lg:py-2.5 lg:text-base inline-block font-medium font-bricolage transition-all duration-500 ${item.special
+                      ? "bg-orange-500 text-white rounded-full hover:bg-orange-600 shadow-md"
+                      : "text-black hover:text-primary"
+                  }`}
                     onClick={() => setIsMenuOpen(false)}
                   >
                     {item.label}

@@ -95,9 +95,8 @@ export default function Faq() {
             <Image
               src={BgShape}
               alt="Background Shape"
-              layout="fill"
-              objectFit="cover"
-              className="absolute inset-0 opacity-50"
+              fill
+              className="object-cover absolute inset-0 opacity-50"
             />
             <div className="relative z-10">
               <Image src={FreelanxxLogo} alt="Freelanxx Logo" width={100} height={100} className="inline-block" />

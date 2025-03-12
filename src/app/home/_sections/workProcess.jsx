@@ -18,8 +18,8 @@ const steps = [
     stage: "Tahap Produksi",
     color: "bg-green-500",
     processes: [
-      { number: "5", title: "Pembuatan Design UI/UX" },
-      { number: "6", title: "Revisi Design UI/UX" },
+      { number: "5", title: "* Pembuatan Design UI/UX" },
+      { number: "6", title: "* Revisi Design UI/UX" },
       { number: "7", title: "Implementasi Aplikasi dan Database" },
       { number: "8", title: "Revisi Akhir", highlight: "text-green-500 font-bold", border: "bg-green-200 border-green-600 text-green-600" },
     ],

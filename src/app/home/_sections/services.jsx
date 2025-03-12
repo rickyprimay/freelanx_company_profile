@@ -39,7 +39,7 @@ export default function Services() {
     }, []);
 
   return (
-    <section id="services" className="lg:pt-25 pt-15">
+    <section id="services" className="lg:pt-25 pt-15 mb-12">
       <div className="container">
         <div className="text-center pb-10 fadeInUp" data-aos="fade-up" data-delay="0.2">
           <SectionTitle title="Layanan Kami" />

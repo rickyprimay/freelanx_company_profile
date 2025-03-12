@@ -33,12 +33,9 @@ export default function Projects() {
       <div className="container">
         <div className="text-center pb-15" data-aos="fade-up">
           <SectionTitle title="Portfolio" />
-          <h2 className="xl:leading-[90px] xl:text-[80px] md:leading-[60px] md:text-[50px] leading-[50px] text-[40px] text-black-100 font-medium" data-aos="zoom-in">
-            Portfolio
-          </h2>
-          <p className="md:text-xl md:leading-7 text-base mt-2">
-            Beberapa project professional yang sudah kami kerjakan
-          </p>
+          <h2 className="text-4xl font-bold mb-4" data-aos="zoom-in">
+          Project Profesional yang <span className="text-blue-500">Kami Kerjakan</span>
+        </h2>
         </div>
         <div className="grid md:grid-cols-2 gap-6">
           {images.map((image, index) => (
@@ -50,9 +47,8 @@ export default function Projects() {
                 <Image
                   src={image.src}
                   alt={image.alt}
-                  layout="fill"
-                  objectFit="cover"
-                  className="group-hover:blur-[1.5px] group-hover:scale-[1.04] transition-all duration-500"
+                  fill
+                  className="object-cover group-hover:blur-[1.5px] group-hover:scale-[1.04] transition-all duration-500"
                 />
                 <span className="absolute top-4 right-4 inline-block rounded-[32px] bg-[rgba(255,79,1,.5)] py-[7px] px-[14px] text-white text-sm uppercase tracking-wider leading-[30px] font-medium">
                   {image.type}

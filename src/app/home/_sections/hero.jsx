@@ -59,10 +59,15 @@ export default function Hero() {
 
       <div className="mt-10 text-center max-w-sm mx-auto relative z-20">
         <h2 className="text-2xl font-bold text-gray-300">Partner Kami</h2>
-        <div className="relative w-full mt-4 overflow-hidden">
-          <div className="logos-slide flex space-x-6">
+        <div className="relative w-full mt-4 overflow-hidden rounded-full">
+          <div className="logos-slide flex space-x-6 ">
             {[...logos, ...logos].map((logo, index) => (
-              <Image key={index} src={logo} alt="Partner Logo" width={100} height={25} className="shrink-0" />
+              <Image 
+              key={index} 
+              src={logo} 
+              alt="Partner Logo" 
+              className="w-[100px] h-[25px] object-contain" 
+            />
             ))}
           </div>
           <div className="fade-left"></div>
