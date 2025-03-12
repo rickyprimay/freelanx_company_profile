@@ -23,7 +23,7 @@ export default function Projects() {
   };
 
   return (
-    <div className="lg:pt-25 pt-15 bg-gray-100 pb-8" id="projects">
+    <div className="lg:pt-25 pt-15 pb-8" id="projects">
       <div className="container">
         <div className="text-center pb-15" data-aos="fade-up">
           <SectionTitle title="Portfolio" />

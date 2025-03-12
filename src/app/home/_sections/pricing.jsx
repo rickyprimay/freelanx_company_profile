@@ -42,7 +42,7 @@ export default function Pricing() {
   const packageKeys = Object.keys(packages);
 
   return (
-    <section id="pricing" className="py-16 text-center bg-gray-50" data-aos="fade-up">
+    <section id="pricing" className="py-16 text-center bg-gray-100 pb-8" data-aos="fade-up">
       <div className="container mx-auto max-w-4xl px-4">
         <SectionTitle title="Daftar Harga" />
         <h2 className="text-4xl font-bold mb-4" data-aos="zoom-in">
@@ -149,7 +149,6 @@ export default function Pricing() {
           )}
         </div>
         <div className="mt-6 text-sm text-gray-500">*Fitur lain dapat dikonsultasikan secara gratis</div>
-        <div className="mt-6 text-sm text-gray-500">*Custom Design dapat dibicarakan lebih lanjut</div>
       </div>
     </section>
   );

@@ -62,12 +62,12 @@ export default function Hero() {
         <div className="relative w-full mt-4 overflow-hidden rounded-full">
           <div className="logos-slide flex space-x-6 ">
             {[...logos, ...logos].map((logo, index) => (
-              <Image 
-              key={index} 
-              src={logo} 
-              alt="Partner Logo" 
-              className="w-[100px] h-[25px] object-contain" 
-            />
+              <Image
+                key={index}
+                src={logo}
+                alt="Partner Logo"
+                className="w-[100px] h-[25px] object-contain"
+              />
             ))}
           </div>
           {/* <div className="fade-left"></div>
@@ -76,8 +76,8 @@ export default function Hero() {
       </div>
 
       <div className="absolute bottom-[-120px] sm:bottom-[-80px] left-0 w-full flex justify-center">
-  <Image src={BgCircle} alt="Background Half Circle" className="w-full h-auto object-contain" />
-</div>
+        <Image src={BgCircle} alt="Background Half Circle" className="w-full h-auto object-contain" />
+      </div>
 
 
       <style jsx>{`

@@ -18,9 +18,6 @@ export default function Footer() {
               <Link href="https://wa.me/6285166994220?text=Halo%2C%20Saya%20ingin%20berkonsultasi%20mengenai%20Jasa%20Pembuatan%20Aplikasi%20di%20Freelanxx%21%20*%28Diskon%2020%25%29*" target="_blank">
                 <i className="ri-whatsapp-line text-xl hover:text-[#00455F]"></i>
               </Link>
-              <Link href="https://twitter.com" target="_blank">
-                <i className="ri-twitter-line text-xl hover:text-[#00455F]"></i>
-              </Link>
             </div>
           </div>
 

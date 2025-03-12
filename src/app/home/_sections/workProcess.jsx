@@ -71,6 +71,7 @@ export default function WorkProcess() {
             </div>
           ))}
         </div>
+        <div className="mt-6 text-sm text-gray-500 text-center">*Custom Design dapat dibicarakan lebih lanjut</div>
       </div>
     </section>
   );
