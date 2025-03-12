@@ -38,7 +38,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="mt-10 grid grid-cols-2 gap-4 font-semibold text-center max-w-sm mx-auto relative z-20">
+      <div className="mt-10 grid grid-cols-2 gap-4 font-semibold text-center max-w-sm mx-auto relative z-20 px-2">
         <h2 className="flex flex-row items-center bg-white text-black px-4 py-2 rounded-lg shadow-2xl hover:bg-gray-100 transition space-x-2">
           <i className="ri-window-line text-2xl"></i>
           <span>Web App</span>
