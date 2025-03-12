@@ -103,8 +103,9 @@ export default function Faq() {
               <h2 className="text-white lg:text-[40px] text-3xl lg:leading-[1.2] py-3">Ada pertanyaan lagi?</h2>
               <div className="flex flex-col gap-4 mt-6">
                 <a
-                  href="#"
+                  href="https://wa.me/6285166994220?text=Halo%2C%20Saya%20ingin%20bertanya%20terlebih%20dahulu%20mengenai%20Jasa%20Pembuatan%20Aplikasi%20di%20Freelanxx"
                   className="flex items-center justify-center gap-2 bg-green-500 text-white text-lg font-medium py-3 px-6 rounded-full shadow-md hover:bg-green-600 transition"
+                  target="_blank"
                 >
                   <i className="ri-whatsapp-line text-xl"></i> Konsultasi via WhatsApp
                 </a>

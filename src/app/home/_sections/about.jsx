@@ -79,7 +79,7 @@ export default function About() {
 
       <div className="grid lg:grid-cols-3 sm:grid-cols-1 gap-6 text-center mt-12 container">
         {features.map((feature, index) => (
-          <div key={index} data-aos="fade-up" data-aos-delay={1000 + index * 200}>
+          <div key={index} className="h-full flex">
             <FeatureCard {...feature} index={index} />
           </div>
         ))}

@@ -25,13 +25,14 @@ export default function Book() {
 
           <div className="relative z-10 mt-5 lg:mt-0 flex flex-col lg:flex-row justify-end gap-4">
             <a
-              href="#"
+              href="https://wa.me/6285166994220?text=Halo%2C%20Saya%20ingin%20berkonsultasi%20mengenai%20Jasa%20Pembuatan%20Aplikasi%20di%20Freelanxx%21%20*%28Diskon%2020%25%29*"
               className="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-lg flex items-center gap-2 shadow-md"
+              target="_blank"
             >
               <i className="ri-whatsapp-line text-xl"></i> Konsultasi via Whatsapp
             </a>
             <a
-              href="#"
+              href="mailto:freelanxx.it@gmail.com"
               className="bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded-lg flex items-center gap-2 shadow-md"
             >
               <i className="ri-mail-line text-xl"></i> Konsultasi via Email

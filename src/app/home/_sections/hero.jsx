@@ -31,7 +31,7 @@ export default function Hero() {
             <Link href="#pricing" className="bg-orange-500 px-6 py-3 rounded-full shadow-lg hover:bg-orange-600 border transition">
               List Harga (Diskon 20%)
             </Link>
-            <Link href="#book" className="bg-[#004A70] px-6 py-3 rounded-full shadow-lg hover:bg-[#346882] border transition">
+            <Link target="_blank" href="https://wa.me/6285166994220?text=Halo%2C%20Saya%20ingin%20berkonsultasi%20mengenai%20Jasa%20Pembuatan%20Aplikasi%20di%20Freelanxx%21%20*%28Diskon%2020%25%29*" className="bg-[#004A70] px-6 py-3 rounded-full shadow-lg hover:bg-[#346882] border transition">
               Konsultasi Sekarang
             </Link>
           </div>
@@ -57,7 +57,7 @@ export default function Hero() {
         </h2>
       </div>
 
-      <div className="mt-10 text-center max-w-sm mx-auto relative z-20">
+      <div className="mt-10 text-center max-w-sm mx-auto relative z-20 ">
         <h2 className="text-2xl font-bold text-gray-300">Partner Kami</h2>
         <div className="relative w-full mt-4 overflow-hidden rounded-full">
           <div className="logos-slide flex space-x-6 ">
@@ -70,14 +70,15 @@ export default function Hero() {
             />
             ))}
           </div>
-          <div className="fade-left"></div>
-          <div className="fade-right"></div>
+          {/* <div className="fade-left"></div>
+          <div className="fade-right"></div> */}
         </div>
       </div>
 
-      <div className="absolute bottom-0 left-0 w-full flex justify-center">
-        <Image src={BgCircle} alt="Background Half Circle" className="w-full h-auto object-contain" />
-      </div>
+      <div className="absolute bottom-[-120px] sm:bottom-[-80px] left-0 w-full flex justify-center">
+  <Image src={BgCircle} alt="Background Half Circle" className="w-full h-auto object-contain" />
+</div>
+
 
       <style jsx>{`
         @keyframes scroll {
