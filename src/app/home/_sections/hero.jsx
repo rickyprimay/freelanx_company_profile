@@ -73,7 +73,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="absolute bottom-[-200px] sm:bottom-[-100px] left-0 w-full md:flex lg:flex sm:hidden justify-center">
+      <div className="absolute bottom-[-200px] sm:bottom-[-103px] left-0 w-full md:flex lg:flex sm:hidden justify-center">
         <Image src={BgCircle} alt="Background Half Circle" className="w-full mb-[103px] h-auto object-contain" />
       </div>
 
