@@ -70,13 +70,11 @@ export default function Hero() {
               />
             ))}
           </div>
-          {/* <div className="fade-left"></div>
-          <div className="fade-right"></div> */}
         </div>
       </div>
 
-      <div className="absolute bottom-[-120px] sm:bottom-[-80px] left-0 w-full flex justify-center">
-        <Image src={BgCircle} alt="Background Half Circle" className="w-full h-auto object-contain" />
+      <div className="absolute bottom-[-200px] sm:bottom-[-100px] left-0 w-full md:flex lg:flex sm:hidden justify-center">
+        <Image src={BgCircle} alt="Background Half Circle" className="w-full mb-[103px] h-auto object-contain" />
       </div>
 
 
@@ -95,24 +93,6 @@ export default function Hero() {
           white-space: nowrap;
           width: max-content;
           animation: scroll 10s linear infinite;
-        }
-
-        .fade-left, .fade-right {
-          position: absolute;
-          top: 0;
-          width: 50px;
-          height: 100%;
-          pointer-events: none;
-        }
-
-        .fade-left {
-          left: 0;
-          background: linear-gradient(to right, rgba(255, 255, 255, 0.5), transparent);
-        }
-
-        .fade-right {
-          right: 0;
-          background: linear-gradient(to left, rgba(255, 255, 255, 0.5), transparent);
         }
       `}</style>
     </section>
