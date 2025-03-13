@@ -9,7 +9,7 @@ import Cipta from "../../../../public/assets/images/freelanx_common_assets/clien
 import Polines from "../../../../public/assets/images/freelanx_common_assets/client/logo_polines.png";
 
 export default function Hero() {
-  const logos = [Polines, Brebes, MTS, Cipta];
+  const logos = [Polines, Cipta, Brebes, MTS];
 
   return (
     <section
