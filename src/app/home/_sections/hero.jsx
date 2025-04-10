@@ -29,7 +29,7 @@ export default function Hero() {
           </p>
           <div className="mt-6 flex flex-wrap justify-center gap-4 text-white font-bold">
             <Link href="#pricing" className="bg-orange-500 px-6 py-3 rounded-full shadow-lg hover:bg-orange-600 border transition">
-              List Harga (Diskon 20%)
+              List Harga (Diskon 10%)
             </Link>
             <Link target="_blank" href="https://wa.me/6285166994220?text=Halo%2C%20Saya%20ingin%20berkonsultasi%20mengenai%20Jasa%20Pembuatan%20Aplikasi%20di%20Freelanxx%21%20*%28Diskon%2020%25%29*" className="bg-[#004A70] px-6 py-3 rounded-full shadow-lg hover:bg-[#346882] border transition">
               Konsultasi Sekarang
