@@ -76,7 +76,7 @@ export default function Pricing() {
                   Rp 1.000.000 <span className="text-black">Saja!</span>
                 </p>
                 <div className="mt-3">
-                  <a href="https://wa.me/6285166994220?text=Halo%2C%20Saya%20ingin%20berkonsultasi%20mengenai%20pembuatan%20Aplikasi%20Paket%20Usaha%20di%20Freelanxx%21%20*%28Diskon%2020%25%29*" target="_blank" className="hover:bg-green-500 hover:text-white px-4 py-1 rounded-xl font-semibold border border-green-500 text-green-500 transition duration-300">
+                  <a href="https://wa.me/6285166994220?text=Halo%2C%20Saya%20ingin%20berkonsultasi%20mengenai%20Jasa%20Pembuatan%20Aplikasi%20di%20Freelanxx%21%20*%28Diskon%2035%25%29*" target="_blank" className="hover:bg-green-500 hover:text-white px-4 py-1 rounded-xl font-semibold border border-green-500 text-green-500 transition duration-300">
                     Konsultasi Sekarang
                   </a>
                 </div>
@@ -123,7 +123,7 @@ export default function Pricing() {
                   Rp 1.500.000 <span className="text-black">Saja!</span>
                 </p>
                 <div className="mt-3">
-                  <a href="https://wa.me/6285166994220?text=Halo%2C%20Saya%20ingin%20berkonsultasi%20mengenai%20pembuatan%20Aplikasi%20Paket%20Custom%20di%20Freelanxx%21%20*%28Diskon%2020%25%29*" target="_blank" className="hover:bg-green-500 hover:text-white px-4 py-1 rounded-xl font-semibold border border-green-500 text-green-500 transition duration-300">
+                  <a href="https://wa.me/6285166994220?text=Halo%2C%20Saya%20ingin%20berkonsultasi%20mengenai%20pembuatan%20Aplikasi%20Paket%20Custom%20di%20Freelanxx%21%20*(Paket%20Aplikasi%20Custom)*" target="_blank" className="hover:bg-green-500 hover:text-white px-4 py-1 rounded-xl font-semibold border border-green-500 text-green-500 transition duration-300">
                     Konsultasi Sekarang
                   </a>
                 </div>

@@ -15,7 +15,7 @@ export default function Footer() {
               <Link href="https://www.instagram.com/freelanxx_it/" target="_blank">
                 <i className="ri-instagram-line text-xl hover:text-[#00455F]"></i>
               </Link>
-              <Link href="https://wa.me/6285166994220?text=Halo%2C%20Saya%20ingin%20berkonsultasi%20mengenai%20Jasa%20Pembuatan%20Aplikasi%20di%20Freelanxx%21%20*%28Diskon%2020%25%29*" target="_blank">
+              <Link href="https://wa.me/6285166994220?text=Halo%2C%20Saya%20ingin%20berkonsultasi%20mengenai%20Jasa%20Pembuatan%20Aplikasi%20di%20Freelanxx%21%20*%28Diskon%2035%25%29*" target="_blank">
                 <i className="ri-whatsapp-line text-xl hover:text-[#00455F]"></i>
               </Link>
             </div>
@@ -42,7 +42,7 @@ export default function Footer() {
           <div>
             <h2 className="text-lg font-semibold text-gray-900">Contact</h2>
             <ul className="mt-2 space-y-2 text-gray-500">
-              <a href="https://wa.me/6285166994220?text=Halo%2C%20Saya%20ingin%20berkonsultasi%20mengenai%20Jasa%20Pembuatan%20Aplikasi%20di%20Freelanxx%21%20*%28Diskon%2020%25%29*" target="_blank" className="hover:text-[#00455F]">
+              <a href="https://wa.me/6285166994220?text=Halo%2C%20Saya%20ingin%20berkonsultasi%20mengenai%20Jasa%20Pembuatan%20Aplikasi%20di%20Freelanxx%21%20*%28Diskon%2035%25%29*" target="_blank" className="hover:text-[#00455F]">
                 <li className="flex items-center gap-2">
                   <i className="ri-phone-line"></i> (62) 851-6699-4220
                 </li>

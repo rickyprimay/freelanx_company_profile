@@ -56,7 +56,7 @@ export default function Navbar() {
                 { href: "#pricing", label: "Harga" },
                 { href: "#faqs", label: "FAQs" },
                 { 
-                  href: "https://wa.me/6285166994220?text=Halo%2C%20Saya%20ingin%20berkonsultasi%20mengenai%20Jasa%20Pembuatan%20Aplikasi%20di%20Freelanxx%21%20*%28Diskon%2020%25%29*", 
+                  href: "https://wa.me/6285166994220?text=Halo%2C%20Saya%20ingin%20berkonsultasi%20mengenai%20Jasa%20Pembuatan%20Aplikasi%20di%20Freelanxx%21%20*%28Diskon%2035%25%29*", 
                   label: "Konsultasi Sekarang", 
                   special: true 
                 },
