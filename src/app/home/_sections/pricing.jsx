@@ -69,11 +69,11 @@ export default function Pricing() {
               <div className="sm:text-center md:text-start lg:text-start w-full lg:w-1/2" data-aos="fade-up">
                 <p className="text-2xl font-bold text-gray-500">Mulai dari</p>
                 <div className="relative inline-block">
-                  <p className="text-black line-through text-4xl mt-2">Rp 1.000.000</p>
-                  <span className="absolute -top-2 -right-10 bg-red-500 text-white text-sm px-2 py-1 rounded-full">-10%</span>
+                  <p className="text-black line-through text-4xl mt-2">Rp 1.500.000</p>
+                  <span className="absolute -top-2 -right-10 bg-red-500 text-white text-sm px-2 py-1 rounded-full">-35%</span>
                 </div>
                 <p className="text-5xl font-bold text-red-500 mt-2">
-                  Rp 900.000 <span className="text-black">Saja!</span>
+                  Rp 1.000.000 <span className="text-black">Saja!</span>
                 </p>
                 <div className="mt-3">
                   <a href="https://wa.me/6285166994220?text=Halo%2C%20Saya%20ingin%20berkonsultasi%20mengenai%20pembuatan%20Aplikasi%20Paket%20Usaha%20di%20Freelanxx%21%20*%28Diskon%2020%25%29*" target="_blank" className="hover:bg-green-500 hover:text-white px-4 py-1 rounded-xl font-semibold border border-green-500 text-green-500 transition duration-300">
@@ -115,12 +115,12 @@ export default function Pricing() {
             <div className="flex flex-col lg:flex-row items-start justify-between gap-8 mb-8" data-aos="fade-up">
               <div className="sm:text-center md:text-start lg:text-start w-full lg:w-1/2">
                 <p className="text-2xl font-bold text-gray-500">Mulai dari</p>
-                <div className="relative inline-block">
+                {/* <div className="relative inline-block">
                   <p className="text-black line-through text-4xl mt-2">Rp 1.800.000</p>
                   <span className="absolute -top-2 -right-10 bg-red-500 text-white text-sm px-2 py-1 rounded-full">-10%</span>
-                </div>
+                </div> */}
                 <p className="text-5xl font-bold text-red-500 mt-2">
-                  Rp 1.620.000 <span className="text-black">Saja!</span>
+                  Rp 1.500.000 <span className="text-black">Saja!</span>
                 </p>
                 <div className="mt-3">
                   <a href="https://wa.me/6285166994220?text=Halo%2C%20Saya%20ingin%20berkonsultasi%20mengenai%20pembuatan%20Aplikasi%20Paket%20Custom%20di%20Freelanxx%21%20*%28Diskon%2020%25%29*" target="_blank" className="hover:bg-green-500 hover:text-white px-4 py-1 rounded-xl font-semibold border border-green-500 text-green-500 transition duration-300">
@@ -138,11 +138,11 @@ export default function Pricing() {
                   <li>Customer Support 24/7</li>
                 </ul>
               </div>
-              <div className="absolute -bottom-14 -left-8 p-0">
+              {/* <div className="absolute -bottom-14 -left-8 p-0">
                 <span className="bg-orange-500 text-white text-md font-bold px-6 py-4 rounded-bl-2xl rounded-tr-2xl">
                   % Flash Sale
                 </span>
-              </div>
+              </div> */}
 
             </div>
 
