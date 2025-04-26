@@ -113,7 +113,7 @@ export default function Pricing() {
 
           {selectedMajorPackage === "Paket Aplikasi Custom" && (
             <div className="flex flex-col lg:flex-row items-start justify-between gap-8 mb-8" data-aos="fade-up">
-              <div className="sm:text-center md:text-start lg:text-start w-full lg:w-1/2">
+              <div className="sm:text-center md:text-start mt-0 md:mt-8 lg:text-start w-full lg:w-1/2">
                 <p className="text-2xl font-bold text-gray-500">Mulai dari</p>
                 {/* <div className="relative inline-block">
                   <p className="text-black line-through text-4xl mt-2">Rp 1.800.000</p>
